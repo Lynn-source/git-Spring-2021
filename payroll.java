@@ -1,8 +1,12 @@
+import java.util.Scanner;
 public class Payroll
 {
    public static void main(String[] args)
    {
-      int hours = 40;
+	   Scanner scan = new Scanner(System.in);
+	   System.out.println("Please enter the number of hours ");
+	   
+      int hours = scan.nextInt();
       double grossPay, payRate = 25.0;
 
       grossPay = hours * payRate;
